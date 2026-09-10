@@ -3,202 +3,268 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap Portfolio</title>
-   
+    <title>Portfolio</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container">
-        <a class="navbar-brand fs-5" href="#"><em>Madelyn Torff</em></a>
+
+  <body class="home">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a style="font-size: 25px" class="navbar-brand" href="index.html"
+          >Huma Shafait</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div
           class="collapse navbar-collapse justify-content-end"
-          id="navbarNavDropdown"
+          id="navbarNav"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav gap-4">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="about.html"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">projects</a>
+              <a class="nav-link" href="index.html">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <main>
       <div class="container">
-        <div class="row mt-5 pt-5">
-          <div class="col-md-6 pt-3">
-            <span class="text-warning fw-medium fs-5">UI/UX Designer</span>
-            <h1 
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 p-4 text-center text-md-start">
+            <span
+              id="span"
               style="
-                font-family: Playfair Display;
-                font-weight: 550;
-                font-size: 60px;
-                color: #25282b;
-               
+                color: #fdc435;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+              "
+              >Web Developer</span
+            >
+            <h1 class="display-4 display-lg-1 fw-semibold">
+              Hello, my name is Huma Shafait
+            </h1>
+            <p
+              style="
+                margin-top: 5px;
+                font-family: Nunito;
+                font-weight: 400;
+                line-height: 150%;
+                color: #828282;
               "
             >
-              Hello, my name <br />
-              is Modelyn Torff
-            </h1>
-            <p class="fw-light fs-5 "style="word-spacing: 1.5px; ">
-              IShort text with details about you, what you <br />
-              do or your professional career. You can add <br />more information
-              on the about page.
+              Hi, I'm Huma Shafait, a passionate Web Developer who enjoys
+              creating modern, responsive, and user-friendly websites. I work
+              with HTML, CSS, Bootstrap, JavaScript, and React to turn ideas
+              into beautiful web experiences.
             </p>
-
-            <button type="button" class="btn btn-warning">Projects</button>
-            <button type="button" class="btn btn-outline-secondary">
-              linkedin
-            </button>
-          </div>
-
-          <div class="col-md-6">
-            <div class="col-md-6">
-              <img
-                src="assets/images/portfolio.png"
-                alt="portfolio"
-                class="img-fluid"
-                style="height: 520px; width: 720px"
-              />
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="./index.html"
+                type="button"
+                class="btn btn-warning w-25 w-md-auto mt-3"
+                >Project</a
+              >
+              <a
+                href="https://www.linkedin.com/in/kashif-ahmad-0047/"
+                type="button"
+                class="btn btn-outline-primary w-25 w-md-auto mt-3"
+                >LinkedIn</a
+              >
             </div>
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end"
+          >
+            <img height="500" src="assets/images/portfolio.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="container">
-        <h1
-          class="mt-5 pt-5 d-flex justify-content-center"
-          style="
-            font-family: Playfair Display;
-            font-weight: 700;
-            color: #25282b;
-            
-          "
-        >
-          Projects
-        </h1>
-        <div class="bg-warning mx-auto rounded" style="width: 90px; height: 3px;"></div>
 
-        <div class="mt-5 mx-auto w-75 ">
-          <div class="row border border-1 border-light bg-light rounded-5 shadow">
-            <div class="col-md-6 ps-5 mt-4 ">
+      <div class="container mt-5">
+        <div class="d-flex justify-content-center mb-5">
+          <h1
+            class="border-bottom border-warning border-3"
+            style="font-family: Playfair Display"
+          >
+            Projects
+          </h1>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-6 bg-body p-0 project-details-odd">
+            <div class="p-5 mt-5">
               <h1
-                class="mt-5 pt-5"
                 style="
                   font-family: Playfair Display;
                   font-weight: 700;
                   color: #25282b;
                 "
               >
-                Project Name
+                Dream Houses
               </h1>
-              <p>
-                I created this personal project in order to show how to create
-                an interface in Figma using a portfolio as an example.
+              <p class="project-span">
+                Dream Houses is a modern and responsive real estate website
+                designed to showcase beautiful properties and provide users with
+                an easy and engaging browsing experience. The website includes
+                property listings, an image gallery, services
               </p>
-              <button type="button" class="btn btn-outline-dark fw-normal mt-3 rounded-5 ">
-                view project
-              </button>
-            </div>
-            <div class="col-md-6">
-              <img
-                src="assets/images/project1.png"
-                alt="Project 1"
-                class="img-fluid p-5 w-100"
-                style="height: 520px;"
-              />
+              <a
+                href="https://github.com/k-ahmad/e-commrece"
+                id="project-btn"
+                type="button"
+                class="btn btn-outline-dark w-20 rounded-pill"
+                >View project</a
+              >
             </div>
           </div>
+          <div class="col-12 col-lg-6 p-0">
+            <img
+              src="assets/images/project1.png"
+              alt=""
+              class="project-img-odd h-100 w-100 object-fit-cover"
+            />
+          </div>
+        </div>
 
-          <div class="row border border-1 border-light bg-light rounded-5 mt-5 shadow">
-            <div class="col-md-6">
-              <img
-                src="assets/images/project2.png"
-                alt="Project 1"
-                class="img-fluid p-5 w-100"
-                 style="height: 520px;"
-              />
-            </div>
-            <div class="col-md-6 ps-5">
-              <h1
-                class="mt-5 pt-5"
-                style="
-                  font-family: Playfair Display;
-                  font-weight: 700;
-                  color: #25282b;
-                "
-              >
-                Project Name
-              </h1>
-              <p>
-                I created this personal project in order to show how to create
-                an interface in Figma using a portfolio as an example.
-              </p>
-              <button type="button" class="btn btn-outline-dark fw-normal mt-3 rounded-5">
-                view project
-              </button>
-            </div>
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6 p-0">
+            <img
+              src="assets/images/project2.png"
+              alt=""
+              class="h-100 w-100 object-fit-cover project-img-even"
+            />
           </div>
 
-          <div class="row border border-1 border-light bg-light rounded-5 mt-5  shadow">
-            <div class="col-md-6 ps-5">
+          <div class="col-12 col-lg-6 bg-body p-0 project-details-even">
+            <div class="p-5">
               <h1
-                class="mt-5 pt-5"
                 style="
                   font-family: Playfair Display;
                   font-weight: 700;
                   color: #25282b;
                 "
               >
-                Project Name
+                Note Taking Website
               </h1>
-              <p>
-                I created this personal project in order to show how to create
-                an interface in Figma using a portfolio as an example.
+              <p class="project-span">
+                Orange Notebook is a simple and modern note-taking website
+                designed to help users create, manage, and organize their
+                personal notes easily. The project provides a clean and
+                user-friendly interface where users can add, edit, and delete
+                notes.
               </p>
-              <button type="button" class="btn btn-outline-dark fw-normal mt-3 rounded-5">
-                view project
-              </button>
+              <a
+                href="https://github.com/k-ahmad/clock"
+                id="project-btn"
+                type="button"
+                class="btn btn-outline-dark w-20 rounded-pill"
+                >View project</a
+              >
             </div>
-            <div class="col-md-6">
-              <img
-                src="assets/images/project3.png"
-                alt="Project 1"
-                class="img-fluid p-5 w-100"
-                style="height: 520px; "
-              />
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 col-lg-6 bg-body p-0 project-details-odd">
+            <div class="p-5">
+              <h1
+                style="
+                  font-family: Playfair Display;
+                  font-weight: 700;
+                  color: #25282b;
+                "
+              >
+                Application Marketplace
+              </h1>
+              <p class="project-span">
+                App Store is a modern and responsive application marketplace
+                website designed to showcase and explore different mobile and
+                web applications. The project provides users with an attractive
+                interface where they can browse apps, view app details.
+              </p>
+              <a
+                href="https://github.com/k-ahmad/shadow-box"
+                id="project-btn"
+                type="button"
+                class="btn btn-outline-dark w-20 rounded-pill"
+                >View project</a
+              >
             </div>
+          </div>
+          <div class="col-12 col-lg-6 p-0">
+            <img
+              src="assets/images/project3.png"
+              alt=""
+              class="project-img-odd h-100 w-100 object-fit-cover"
+            />
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <div class="d-flex justify-content-center gap-3 mt-5 pt-5 pb-5">
-        <i class="fa-brands fa-facebook fa-2xl"></i>
-        <i class="fa-brands fa-instagram fa-2xl"></i>
-       <i class="fa-brands fa-linkedin fa-2xl"></i>
-      
+
+    <footer
+      class="d-flex justify-content-center mt-5 gap-3 p-5 flex-column align-items-center"
+    >
+      <div>
+        <a href="https://www.instagram.com/kashi_112255?stkn=cncxaXdobGRwNnQy"
+          ><i
+            class="fa-brands fa-square-instagram text-dark"
+            style="font-size: 30px"
+          ></i
+        ></a>
+        <a href="https://www.linkedin.com/in/kashif-ahmad-0047/"
+          ><i
+            class="fa-brands fa-linkedin text-dark"
+            style="font-size: 30px"
+          ></i
+        ></a>
+        <a href="mailto:kashifahmad0047@gmail.com"
+          ><i class="fa-solid fa-envelope text-dark" style="font-size: 30px"></i
+        ></a>
       </div>
-      <p class="text-secondary fs-6 text-center ">Madelyn Torff 2021</p>
+      <div>
+        <span style="color: #828282">©Kashif Ahmad 2026 </span>
+      </div>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
